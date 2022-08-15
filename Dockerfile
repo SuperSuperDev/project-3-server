@@ -8,4 +8,4 @@ ENV CLIENT_URL $CLIENT_URL
 # RUN npm install -qyg nodemon@2.0.7
 RUN npm install -qy
 COPY . .
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "start"]

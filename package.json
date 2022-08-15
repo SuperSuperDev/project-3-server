@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "npx nodemon server.js",
     "test": "node --experimental-vm-modules --no-warnings  node_modules/.bin/jest -i --verbose --watch",
-    "start": "node server.js",
+    "start": "NODE_ENV=production && node server.js",
     "seed:dev": "node db/seed.js",
     "seed:prod": "NODE_ENV=production node db/seed.js"
   },
